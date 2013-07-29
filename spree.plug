@@ -1,0 +1,6 @@
+[Core]
+Name = Spree
+Module = spree
+
+[Documentation]
+Description = let's do business !
