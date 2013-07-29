@@ -9,7 +9,7 @@ class Spree(BotPlugin):
     max_err_version = '1.7.1'  # Optional, but recommended
 
     def callback_connect(self):
-        self.start_poller(5, self.chime, args={}, kwargs={})
+        self.start_poller(60, self.chime, args={}, kwargs={})
 
     def chime(self):
         for jid in holder.bot.roster.getItems():
